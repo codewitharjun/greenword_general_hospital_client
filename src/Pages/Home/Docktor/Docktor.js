@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
                         <Card.Text>{digName} Especalist</Card.Text>
                         <Card.Text>Degrees: {degree}</Card.Text>
                         <Link to={`appoint/${id}`}>
-                            <Button variant="warning">Enroll Now</Button>
+                            <Button variant="warning">Appoint Now</Button>
                         </Link>
                     </Card.Body>
                 </Card>

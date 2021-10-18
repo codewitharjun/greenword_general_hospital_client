@@ -8,6 +8,7 @@ import Appoint from './Pages/Home/Appoint/Appoint';
 import Header from './Pages/Header/Header';
 import Login from './Pages/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
+import PriverRoute from './Pages/Login/PrivetRoute/PrivetRoute';
 
 function App() {
   return (
@@ -25,9 +26,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/appoint/:appointId">
+            <PriverRoute path="/appoint/:appointId">
               <Appoint></Appoint>
-            </Route>
+            </PriverRoute>
             <Route path="/login">
             </Route>
             <Route path="*">

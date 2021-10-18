@@ -6,8 +6,8 @@ import useAuth from "../../../hooks/useAuth";
      const {signInUsingGoogle} = useAuth();
      return (
         <div>
-            <h2>Please Login</h2>
-            <Button onClick={signInUsingGoogle} variant="warning">Enroll Now</Button>
+            <h2>Please Loginnfghdgdghhg</h2>
+            <Button className="my-5" onClick={signInUsingGoogle} variant="warning">Login With Google</Button>
         </div>
      );
  };
