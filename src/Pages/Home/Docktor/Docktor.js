@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Col, Button } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 
  const Docktor = (props) => {
@@ -13,7 +14,9 @@ import { Card, Col, Button } from 'react-bootstrap';
                         <Card.Title>Name: {docName}</Card.Title>
                         <Card.Text>{digName} Especalist</Card.Text>
                         <Card.Text>Degrees: {degree}</Card.Text>
-                        <Button variant="warning">Enroll Now</Button>
+                        <Link to={`appoint/${id}`}>
+                            <Button variant="warning">Enroll Now</Button>
+                        </Link>
                     </Card.Body>
                 </Card>
             </Col>
