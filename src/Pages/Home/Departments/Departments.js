@@ -13,8 +13,8 @@ import Department from "../Department/Department";
      }, [])
 
      return (
-        <div className="mt-5">
-            <h2 className="text-primary mb-3">Our Services</h2>
+        <div id="services" className="mt-5">
+            <h2 className="text-primary mb-4">Our Departments</h2>
             <div>
                 <Row xs={1} md={2} lg={4} className="g-4">
                     {

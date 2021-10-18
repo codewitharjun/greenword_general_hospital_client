@@ -6,9 +6,9 @@ import Docktors from "../Docktors/Docktors";
  const Home = () => {
      return (
         <div>
-            <Banner></Banner>
-            <Departments></Departments>
+            <Banner className="mb-5"></Banner>
             <Docktors></Docktors>
+            <Departments></Departments>
         </div>
      )
  }

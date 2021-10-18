@@ -14,7 +14,7 @@ import { Row } from 'react-bootstrap';
      }, [])
 
      return (
-        <div id="services" className="mt-5">
+        <div id="docktors" className="mt-5">
             <h2 className="text-primary mb-3">Our Doctors</h2>
             <div>
                 <Row xs={1} md={2} lg={4} className="g-4">
