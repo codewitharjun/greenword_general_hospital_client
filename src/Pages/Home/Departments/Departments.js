@@ -12,6 +12,7 @@ import Department from "../Department/Department";
         .then(data => setDepartments(data))
      }, [])
 
+
      return (
         <div id="services" className="mt-5">
             <h2 className="text-primary mb-4">Our Departments</h2>
@@ -24,6 +25,10 @@ import Department from "../Department/Department";
             </div>
         </div>
      )
+     return {
+        departments,
+        setDepartments
+     }
  }
 
  export default Departments;

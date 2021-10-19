@@ -20,7 +20,7 @@ import useAuth from "../../../hooks/useAuth";
      return (
         <div>
             <div>
-                <h2>Please Login</h2>
+                <h2 className="text-primary mt-3">Please Login</h2>
                 <form onSubmit={handleLogIn}>
                     <input onBlur={handleEmailChange} className="my-2" type="email" name="" id="" placeholder="Your Email"/>
                     <br/>
@@ -29,7 +29,8 @@ import useAuth from "../../../hooks/useAuth";
                     <input className="my-2" type="submit" name="" id="" value="Submit"/>
                 </form>
                 <p>New to Greenworld Hospital? <Link to="/register">Register Here</Link></p>
-                <Button className="my-5" onClick={handleGoogleLogIn} variant="warning">Google  Sign In</Button>
+                <p className="mt-5 text-success">You can also Login using Google</p>
+                <Button className="mb-5" onClick={handleGoogleLogIn} variant="warning"><i className="fab fa-google google-style"></i></Button>
             </div>
         </div>
      );

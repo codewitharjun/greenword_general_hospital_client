@@ -9,7 +9,7 @@ import useAuth from "../../../hooks/useAuth";
      return (
         <div>
             <div>
-                <h2>Register: Create Account</h2>
+                <h2 className="text-primary mt-3">Register: Create Account</h2>
                 <form onSubmit={handleRegistration}>
                     <input onBlur={handleNameChange} className="my-2" type="text" name="" id="" placeholder="Your Name" required/>
                     <br/>
@@ -23,7 +23,8 @@ import useAuth from "../../../hooks/useAuth";
                 </form>
                 <p className="text-danger">{error}</p>
                 <p>Allready You Have Account? <Link to="/login">Login Here</Link></p>
-                <Button className="my-5" onClick={signInUsingGoogle} variant="warning">Google Sign In</Button>
+                <p className="mt-5 text-success">You can also Register using Google</p>
+                <Button className="mb-5" onClick={signInUsingGoogle} variant="warning"><i className="fab fa-google google-style"></i></Button>
             </div>
         </div>
      );
