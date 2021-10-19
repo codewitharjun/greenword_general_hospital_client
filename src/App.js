@@ -7,6 +7,7 @@ import Footer from './Pages/Footer/Footer';
 import Appoint from './Pages/Home/Appoint/Appoint';
 import Header from './Pages/Header/Header';
 import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider';
 import PriverRoute from './Pages/Login/PrivetRoute/PrivetRoute';
 
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
             </Route>
             <PriverRoute path="/appoint/:appointId">
               <Appoint></Appoint>
