@@ -4,11 +4,10 @@ import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
  const Login = () => {
-     const {signInUsingGoogle, setIsLoading} = useAuth();
+     const {signInUsingGoogle, setIsLoading, handleEmailChange, handlePasswordChange, handleLogIn} = useAuth();
      const location = useLocation();
      const history = useHistory();
      const redirect_url = location.state?.from || '/';
-     console.log(location.state?.from);
 
      const handleGoogleLogIn = () => {
          signInUsingGoogle()
@@ -22,10 +21,10 @@ import useAuth from "../../../hooks/useAuth";
         <div>
             <div>
                 <h2>Please Login</h2>
-                <form>
-                    <input className="my-2" type="email" name="" id="" placeholder="Your Email"/>
+                <form onSubmit={handleLogIn}>
+                    <input onBlur={handleEmailChange} className="my-2" type="email" name="" id="" placeholder="Your Email"/>
                     <br/>
-                    <input type="password" name="" id="" placeholder="Enter Password"/>
+                    <input onBlur={handlePasswordChange} type="password" name="" id="" placeholder="Enter Password"/>
                     <br/>
                     <input className="my-2" type="submit" name="" id="" value="Submit"/>
                 </form>
