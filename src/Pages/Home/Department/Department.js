@@ -10,8 +10,7 @@ import { Card, Col, Button } from 'react-bootstrap';
                     <Card.Img variant="top" src={digImg} />
                     <Card.Body>
                         <Card.Title>Department: {digName}</Card.Title>
-                        <Card.Title>Price: ${price}</Card.Title>
-                            <Button variant="warning">Enroll Now</Button>
+                        <Button variant="warning">See Details</Button>
                     </Card.Body>
                 </Card>
             </Col>

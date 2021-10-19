@@ -1,0 +1,37 @@
+.achivement {
+    width: 85%;
+    margin: 0 auto;
+  }
+.arards {
+    background: rgb(211, 224, 251);
+    background-position: cover;
+    padding-bottom: 20px;
+}
+.arards-img {
+    display: flex;
+    justify-content: center;
+}
+.arards-img img {
+    width: 100%;
+}
+.arards-div h2, .arards-div p {
+    padding: 0 10px;
+}
+.other-arards {
+    padding:0 10px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    background: rgb(251, 211, 242);
+    margin: 0 auto;
+}
+
+.other-arards h3{
+    background: rgb(255, 253, 225);
+    text-align: center;
+    padding: 7px 0;
+    color: rgb(66, 0, 51);
+}
+.other-arards h5{
+    color: rgb(0, 61, 66);
+}

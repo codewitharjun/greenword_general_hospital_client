@@ -11,6 +11,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider';
 import PriverRoute from './Pages/Login/PrivetRoute/PrivetRoute';
+import About from './Pages/Home/About/About';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/about">
+                <About></About>
             </Route>
             <Route path="/login">
               <Login></Login>
