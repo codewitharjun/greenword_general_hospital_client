@@ -23,7 +23,7 @@ import { Button } from "react-bootstrap";
      console.log(setDepartments);
      
      return (
-        <div>
+        <div className="bg-green pb-4">
             {/* {
                 docktors.find(doc => {
                     if(doc.id == appointId) {

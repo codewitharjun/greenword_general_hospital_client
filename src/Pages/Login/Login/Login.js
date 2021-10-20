@@ -18,9 +18,9 @@ import useAuth from "../../../hooks/useAuth";
         .finally(() => setIsLoading(false))
      }
      return (
-        <div>
+        <div className="bg-lred">
             <div>
-                <h2 className="text-primary mt-3">Please Login</h2>
+                <h2 className="text-primary pt-3">Please Login</h2>
                 <form onSubmit={handleLogIn}>
                     <input onBlur={handleEmailChange} className="my-2" type="email" name="" id="" placeholder="Your Email"/>
                     <br/>

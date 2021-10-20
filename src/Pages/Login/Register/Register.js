@@ -7,9 +7,9 @@ import useAuth from "../../../hooks/useAuth";
      const {signInUsingGoogle, handleNameChange, handleEmailChange, handlePasswordChange, handleRegistration, error } = useAuth();
 
      return (
-        <div>
+        <div className="bg-lred">
             <div>
-                <h2 className="text-primary mt-3">Register: Create Account</h2>
+                <h2 className="text-primary pt-3">Register: Create Account</h2>
                 <form onSubmit={handleRegistration}>
                     <input onBlur={handleNameChange} className="my-2" type="text" name="" id="" placeholder="Your Name" required/>
                     <br/>

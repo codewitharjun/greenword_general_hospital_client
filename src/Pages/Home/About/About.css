@@ -35,3 +35,11 @@
 .other-arards h5{
     color: rgb(0, 61, 66);
 }
+
+.bg-green {
+    background: rgb(223, 255, 223);
+}
+
+.bg-lred {
+    background: rgb(255, 228, 249);
+}
