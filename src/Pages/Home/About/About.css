@@ -43,3 +43,12 @@
 .bg-lred {
     background: rgb(255, 228, 249);
 }
+
+.career-img {
+    width: 100%;
+    height: auto;
+}
+
+.text-crsl {
+    color: rgb(0, 131, 124);
+}

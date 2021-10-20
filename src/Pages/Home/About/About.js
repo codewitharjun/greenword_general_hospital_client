@@ -12,8 +12,8 @@ const About = () => {
                 <div  className="arards-img">
                     <img src={hsptl} alt=""/>
                 </div>
-                <div className="arards-div">
-                    <h2>History of hospitals</h2>
+                <div className="arards-div mb-6">
+                    <h2 className="pt-2">History of hospitals</h2>
                     <p>
                     Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment, both medical and surgical, of the sick and the injured; 
                     and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching. To better serve the wide-ranging 
@@ -26,8 +26,8 @@ const About = () => {
                 <div  className="arards-img">
                     <img src={online} alt=""/>
                 </div>
-                <div className="arards-div">
-                    <h2>The modern hospital</h2>
+                <div className="arards-div mb-6">
+                    <h2 className="pt-2">The modern hospital</h2>
                     <p>
                     Hospitals may be compared by the number of beds they contain. Modern hospitals tend to rarely exceed 800 beds, and though some integrated health facilities may have 
                     more beds, they often comprise multiple geographic locations, each with several hundred beds. In the early 21st century, it was thought that a facility of 800 
@@ -42,8 +42,8 @@ const About = () => {
                 <div  className="arards-img">
                     <img src={nurse} alt=""/>
                 </div>
-                <div className="arards-div">
-                    <h2>The general hospital</h2>
+                <div className="arards-div mb-6">
+                    <h2 className="pt-2">The general hospital</h2>
                     <p>
                     General hospitals may be academic health facilities or community-based entities. They are general in the sense that they admit all types of medical and surgical 
                     cases, and they concentrate on patients with acute illnesses needing relatively short-term care. Community general hospitals vary in their bed numbers. Each 
@@ -58,8 +58,8 @@ const About = () => {
                 <div  className="arards-img">
                     <img src={baby} alt=""/>
                 </div>
-                <div className="arards-div">
-                    <h2>Babys health facilities</h2>
+                <div className="arards-div mb-6">
+                    <h2 className="pt-2">Babys health facilities</h2>
                     <p>
                     The spread of Western medicine (or conventional medicine) and the founding of hospitals in developing countries can be attributed in large part to the influence 
                     of the medical missionary. The establishment of mission hospitals gained momentum gradually in the second half of the 19th century. By the second half of the 20th 

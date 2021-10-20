@@ -15,8 +15,8 @@ const Banner =() => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h4 className="text-crsl">"Physical fitness is the first requisite of happiness."</h4>
+                    <h5 className="text-crsl">Joseph Pilates</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,8 +27,8 @@ const Banner =() => {
                     />
 
                     <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4 className="text-crsl">“Health is not valued until sickness comes.”</h4>
+                    <h5 className="text-crsl">Thomas Fuller</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -39,8 +39,8 @@ const Banner =() => {
                     />
 
                     <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h4 className="text-crsl">"Success is getting what you want, happiness is wanting what you get."</h4>
+                    <h5 className="text-crsl">W.P. Kinsella</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 </Carousel>

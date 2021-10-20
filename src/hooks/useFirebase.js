@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendEmailVerification, signOut } from "firebase/auth";
 import {useState, useEffect} from 'react';
 import initializeAuthentication from "../Pages/Login/firebase/firebase.init";
 
@@ -44,11 +44,19 @@ const useFirebade = () => {
         .then(result => {
             const user = result.user;
             setError('')
+            verifyEmail();
             console.log(user);
         })
         .catch(error =>{
             setError(error.message);
             setIsLoading(false);
+        })
+    }
+
+    const verifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+        .then( result => {
+            console.log(result);
         })
     }
     // End register 

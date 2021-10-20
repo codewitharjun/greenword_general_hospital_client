@@ -1,0 +1,19 @@
+.appoiemt-container {
+    background: rgb(255, 129, 198);
+    display: flex;
+    justify-content: space-between;
+}
+
+.appoiemt-container div {
+    background: white;
+    padding: 50px 0;
+}
+
+.career-appoinet div p {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
