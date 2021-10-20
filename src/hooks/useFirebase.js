@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendEmailVerification, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, GoogleAuthProvider, onAuthStateChanged, sendEmailVerification, signOut } from "firebase/auth";
 import {useState, useEffect} from 'react';
 import initializeAuthentication from "../Pages/Login/firebase/firebase.init";
 
@@ -18,38 +18,50 @@ const useFirebade = () => {
     // Start Register  New Account 
 
     const handleNameChange = e => {
-       setName(e.target.value);
+        setName(e.target.value);
     }
+    console.log(name);
     
     const handleEmailChange = e => {
        setEmail(e.target.value);
     }
+    console.log(email);
     
-   const handlePasswordChange = e => {
-       setPassword(e.target.value);
+    const handlePasswordChange = e => {
+        setPassword(e.target.value);
     }
+    console.log(password);
     
     const handleRegistration = e => {
         e.preventDefault();
         setIsLoading(true);
-        if (password.length < 6) {
-            setError('Password must be at least 6 characters long.')
+            if (password.length < 6) {
+                setError('Password must be at least 6 characters long.')
             return;
         }
         if (!/(?=.*[A-Z])(?=.*[0-9])/.test(password)) {
             setError('Password must be at least 1 Number and 1 Capita Later.')
             return;
         }
+        
         createUserWithEmailAndPassword(auth, email, password)
         .then(result => {
             const user = result.user;
             setError('')
+            setUserName();
             verifyEmail();
             console.log(user);
         })
         .catch(error =>{
             setError(error.message);
             setIsLoading(false);
+        })
+    }
+
+    const setUserName =() => {
+        updateProfile(auth.currentUser, {displayName: name})
+        .then( result => {
+
         })
     }
 
@@ -62,8 +74,8 @@ const useFirebade = () => {
     // End register 
 
     // LogIn 
-    const handleLogIn = (event, email, password) => {
-        event.preventDefault();
+    const handleLogIn = e => {
+        e.preventDefault();
         setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
         .then(result => {

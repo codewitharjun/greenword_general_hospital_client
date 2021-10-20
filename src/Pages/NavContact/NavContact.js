@@ -12,7 +12,7 @@ const Footer = () => {
                 <div>
                     <i className="fab 5x fa-facebook"></i>
                     <i className="fab fa-twitter"></i>
-                    <i class="fas fa-envelope"></i>
+                    <i className="fas fa-envelope"></i>
                     {/* <i className="fab fa-google"></i> */}
                     <i className="far fa-paper-plane"></i>
                 </div>

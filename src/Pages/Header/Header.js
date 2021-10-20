@@ -24,7 +24,7 @@ const Header = () => {
                     <Button onClick={logOut} variant="link">LogOut</Button> :
                     <Nav.Link as={Link} to="/login">Login</Nav.Link>
                   }
-                  <Navbar.Text> <i class="fas fa-user-circle"></i> <a href="/login">{user?.displayName}</a></Navbar.Text>
+                  <Navbar.Text> <i className="fas fa-user-circle"></i> <a href="/login">{user?.displayName}</a></Navbar.Text>
               </Navbar.Collapse>
           </Container>
       </Navbar>
