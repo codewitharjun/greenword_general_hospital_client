@@ -12,7 +12,7 @@ import AuthProvider from './contexts/AuthProvider';
 import PriverRoute from './Pages/Login/PrivetRoute/PrivetRoute';
 import Careers from './Pages/Careers/Careers';
 import About from './Pages/Home/About/About';
-import './App.css';
+import './App.css';  
 
 function App() {
   return (
